@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://2imvs0067l74"]
+
+[ext_resource type="Texture2D" uid="uid://d263guin7lt4d" path="res://materials/MoebiusScene.jpeg" id="1_p0pm0"]
+[ext_resource type="PackedScene" uid="uid://8w5ed3ibrx8g" path="res://controllers/fps_controller.tscn" id="2_lpf5p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4hd2q"]
+albedo_texture = ExtResource("1_p0pm0")
+
+[node name="Node3D" type="Node3D" unique_id=817084186]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=597609681]
+
+[node name="Ground" type="CSGBox3D" parent="." unique_id=1609846933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.411827, -0.45860958, -3.3166142)
+use_collision = true
+size = Vector3(96.83902, 1, 147.21786)
+material = SubResource("StandardMaterial3D_4hd2q")
+
+[node name="Ramp" type="CSGBox3D" parent="." unique_id=2021094506]
+transform = Transform3D(-0.99997693, -0.0013900106, -0.0066454913, 0, 0.97881746, -0.2047353, 0.006789306, -0.20473057, -0.9787949, 3.0888872, 0.85891074, -4.95453)
+use_collision = true
+size = Vector3(3.2646484, 0.58447266, 11.340279)
+
+[node name="Box1" type="CSGBox3D" parent="." unique_id=1695808616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1586199, 0.60177135, 5.7043037)
+use_collision = true
+size = Vector3(5.293213, 1.1768188, 3.6000977)
+
+[node name="Box2" type="CSGBox3D" parent="." unique_id=1854035713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75232804, -0.032339215, 4.6473255)
+use_collision = true
+
+[node name="Box3" type="CSGBox3D" parent="." unique_id=964871413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75232804, 0.30427945, 6.110961)
+use_collision = true
+
+[node name="CharacterBody3D" parent="." unique_id=1446050740 instance=ExtResource("2_lpf5p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1308882, 0)
+
+[node name="Box4" type="CSGBox3D" parent="." unique_id=1467296484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.615528, 2.0942225, -6.1953344)
+use_collision = true
+size = Vector3(5.1938477, 1, 9.753418)

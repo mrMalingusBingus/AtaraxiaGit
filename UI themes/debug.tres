@@ -1,0 +1,21 @@
+[gd_resource type="Theme" format=3 uid="uid://2dr4b24u4joi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_slok3"]
+bg_color = Color(0.18673569, 0.47636694, 0.5421409, 1)
+border_width_left = 13
+border_width_bottom = 10
+border_color = Color(0.44615513, 0.9896597, 0.92889327, 1)
+border_blend = true
+corner_radius_top_left = 80
+corner_radius_top_right = 10
+corner_radius_bottom_right = 80
+corner_radius_bottom_left = 10
+shadow_color = Color(0.44590002, 0.5000451, 0.91, 0.6)
+shadow_size = 8
+
+[resource]
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_slok3")
